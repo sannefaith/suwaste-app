@@ -3,7 +3,7 @@
 @section('container-fluid')
 <div class="card">
     <div class="card-body">
-    <h1>SUWASTE ADMIN </h1>
+    <h1>WELCOME BACK</h1>
 </div>
 </div>
 @endsection

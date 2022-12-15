@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+  @livewireStyles
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +12,8 @@
 
     <!-- Fonts and icons -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
-  
+    <link href="{{ asset('admin/css/nucleo-icons.css') }}" rel="stylesheet" />
+    <link href="{{ asset('admin/css/nucleo-svg.css') }}" rel="stylesheet" />
   <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
   <!-- Material Icons -->
@@ -46,7 +48,7 @@
   <script src="{{ asset('admin/js/plugins/smooth-scrollbar.min.js') }}" defer>></script>
   <script src="{{ asset('admin/js/plugins/chartjs.min.js') }}" defer>></script>
   <script src="{{ asset('admin/js/material-dashboard.min.js') }}" defer>></script>
- 
-   
+ @livewireScripts
+   @stack('script')
 </body>
 </html>
